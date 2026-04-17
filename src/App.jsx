@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import LessonPage from "./LessonPage";
-const API_URL = import.meta.env.VITE_API_URL;
+
+const API_URL = import.meta.env.VITE_API_URL || "https://100.52.225.111";
 // ── Helpers ────────────────────────────────────────────────────────────────
 function formatSize(bytes) {
   if (bytes < 1024) return `${bytes} B`;
